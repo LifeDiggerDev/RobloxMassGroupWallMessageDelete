@@ -2,7 +2,7 @@
 
 Some simple and quick code to allow you to delete mass amounts of messages in a group wall on the platform Roblox. This was made due to many people asking for ways to do this on the DevFourm and also many feature requests. This code is written in JavaScript (node.js).
 
-**DevFourm Post:**
+**DevFourm Post:** https://devforum.roblox.com/t/mass-group-wall-messages-delete-bot/2005020
 ---
 
 ### How to use?
