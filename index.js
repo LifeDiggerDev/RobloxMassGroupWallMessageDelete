@@ -30,4 +30,22 @@ const massDeleteMessages = async () => {
     })
 }
 
+const massDeleteUserMessages = async (userId) =>{
+    const AuthToken = await AuthAPI.getCookieAuthToken()
+    axios.delete(
+        `https://groups.roblox.com/v1/groups/${process.env.GROUP_ID}/wall/users/${userId}/posts`,
+        {
+            headers: {
+                "Content-Type": "application/json",
+                Cookie: `.ROBLOSECURITY=${process.env.ROBLOX_TOKEN}`,
+                'x-csrf-token': AuthToken,
+            }
+        }
+    ).then(response =>{
+        console.log("All messages from the user selected should be removed sucessfully!")
+    }).catch(err =>{
+        console.log(err.response.data)
+    })
+}
+
 massDeleteMessages()
