@@ -11,7 +11,7 @@ Some simple and quick code to allow you to delete mass amounts of messages in a 
 
 1) Clone the code inside of this respository. You can do this by clicking the green "Code" button and then clicking the "Download Zip"; after that you will be required to extract the zip file. You can also use commands inside of the command prompt (or other way if your not on the windows OS). Also ensure you have node.js install onto your device (can get download from node.js website).
 
-2) After this fill in all of the values inside of the .env file (all values in the .env file are required). Please also ensure that all values you add are vaild and correct or you may have issues when attempting to start up the Discord bot. An explaination of the values can be found on the DevFourm post.
+2) After this fill in all of the values inside of the .env file (all values in the .env file are required). Please also ensure that all values you add are vaild and correct or you may have issues when attempting to start up the bot. An explaination of the values can be found on the DevFourm post.
 
 3) Next download all of the NPM packages which are required for this Discord bot to work. You can do this by writing **``npm install``** inside of the terminal/command prompt (or other way if your on a diffrent OS).
 
