@@ -1,4 +1,3 @@
-
 const Axios = require(`axios`).default
 
 module.exports.getCookieAuthToken = async function getCookieAuthToken() {
@@ -11,7 +10,8 @@ module.exports.getCookieAuthToken = async function getCookieAuthToken() {
         }).then(response =>{
             console.log("Somthing has gone very wrong and for some no real reason you where logged out...")
         }).catch(err =>{
-            if (err.response.data.errors[0].message == "Token Validation Failed"){
+            console.log(err.response.data.message)
+            if (err.response.data.message == "Token Validation Failed"){
                 resolve (err.response.headers[`x-csrf-token`])
             }else{
                 console.error("Issue seems to have been caused while trying to you the x-csrf-token. Please ensure your Roblox cookie is correct.");
